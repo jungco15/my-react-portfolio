@@ -84,6 +84,7 @@ section{
     position: absolute;
     left: 74%;
     top: 75%;
+    padding-top: 4px;
     padding-left: 2px;
 }
 .bot-line{
