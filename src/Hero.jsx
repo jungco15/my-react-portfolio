@@ -5,7 +5,7 @@ function Hero(){
             <div className="container">
                 <div className="hero">
                 <div className="mini-heading">
-                    <p>Hi there, my name is bornok</p>
+                    <p>Hi there, my name is </p>
                 </div>
                 <div className="name">
                     <h4>JM JUNGCO</h4>
