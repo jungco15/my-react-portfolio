@@ -11,7 +11,7 @@ import './About.css'
 
 function App() {
   return (
-
+    
     <>
     <Header/>
     <Hero/>
