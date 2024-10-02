@@ -22,9 +22,10 @@ section{
     letter-spacing: 1px;
     color: #ffffff;
     margin-bottom: 12px;
+    cursor: default;
 }
 .line-header {
-    width: 80%;           /* Full width */
+    width: 90%;           /* Full width */
     height: 1px;          /* Thickness of the line */
     background-color: #09cd925e; /* Color of the line */
     margin: 10px 0;       /* Space above and below */
@@ -32,19 +33,38 @@ section{
 .content-about{
     box-sizing: border-box;
     justify-content: space-between;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .body-left {
     height: 355px;
-    width: 352px;
+    width: 355px;
+    cursor: default;
 }
 .body-left p{
     margin: 20px 0 0px 0;
     color: #B3B3B3;
-    font-size: 16px;
     font-weight: 500;
     font-family: "Inria Sans";
     font: 16px sans-serif;
     letter-spacing: 1px;
+}
+.body-right{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: -40px;
+    display: inline-block;
+    border-radius: 5px;
+    z-index: 1;
+}
+.body-right img{
+    width: auto; 
+    border-radius: 5px; 
+    transition: 0.3s;
+}
+.body-right:hover {
+    transform: translateX(10deg);
 }
 
 

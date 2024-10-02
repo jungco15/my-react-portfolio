@@ -16,6 +16,7 @@ section{
     color: #09cd92;
     font-family: "Inria Sans";
     font: 14px sans-serif;
+    font-style:inherit;
     letter-spacing: 1px;
     font-weight: 300;
     display: flex;

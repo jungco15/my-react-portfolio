@@ -23,7 +23,7 @@ function About(){
             </div>
                  </div>
             <div className="body-right">
-                    <img src={myPic} alt="pic ni bossing"></img>
+                   <a href='https://www.facebook.com/jm.jungco.15' title='Click mo bossing' target='blank'> <img src={myPic} alt="pic ni bossing"></img> </a>
             </div>
             <div className="list">
                 <ul>
