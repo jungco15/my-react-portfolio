@@ -1,11 +1,12 @@
 section{
     height: 100vh;
     width: auto;
+    background-color: #2d2d2d;
 }
 .about{
     box-sizing: border-box;
     height: 720px;
-    padding: 100px 380px 110px ;
+    padding: 50px 380px 110px ;
 }
 .container-about{
     height: 510px;
@@ -25,7 +26,7 @@ section{
     cursor: default;
 }
 .line-header {
-    width: 90%;           /* Full width */
+    width: 86%;           /* Full width */
     height: 1px;          /* Thickness of the line */
     background-color: #09cd925e; /* Color of the line */
     margin: 10px 0;       /* Space above and below */
@@ -41,6 +42,7 @@ section{
     height: 355px;
     width: 355px;
     cursor: default;
+    text-decoration: none;
 }
 .body-left p{
     margin: 20px 0 0px 0;
@@ -50,22 +52,79 @@ section{
     font: 16px sans-serif;
     letter-spacing: 1px;
 }
+.body-left a{
+    text-decoration: none;
+    color: #09cd92;
+}
 .body-right{
     max-width: fit-content;
+    width: auto;
     margin-left: auto;
-    margin-right: -40px;
+    margin-right: auto;
     display: inline-block;
-    border-radius: 5px;
-    z-index: 1;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+    transition-delay: transform 1s;
+    will-change: transform;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    box-shadow: 10px 12px 0px 0px hsl(162, 92%, 42%);
+}
+.body-right:hover{
+    transition-duration: 80ms ;
+    transform: translate(4%, 4%);
+    overflow: hidden;
+    box-shadow: 1px 2px 0px 0px hsl(162, 92%, 42%);
 }
 .body-right img{
-    width: auto; 
-    border-radius: 5px; 
-    transition: 0.3s;
+    width: auto;  
+    display: block;
+    height: auto;
+    filter: blur(0px);
 }
-.body-right:hover {
-    transform: translateX(10deg);
+.bottom-list {
+    max-width: fit-content;
+    margin-left: 10px;
+    margin-top: 10px;
 }
+
+.bottom-list ul {
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+.bottom-list li {
+    background-color: #2d2d2d;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20px; /* Add some space between items */
+    margin-bottom: -10px; /* Add space below each item */
+    position: relative; /* Positioning for pseudo-element */
+    list-style: none; /* Remove default bullet */
+    color: #B3B3B3;
+    font-family:'Inria Sans';
+    font: 14px sans-serif;
+}
+
+.bottom-list li::before {
+    content: '';
+    position: absolute;
+    left: -6px; /* Adjust position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px; /* Diameter of custom bullet */
+    height: 4px; /* Diameter of custom bullet */
+    background-color: #09cd92; /* Color of custom bullet */
+    border-radius: 50%; /* Makes it a circle */
+}
+
+.bottom-list li:last-child {
+    margin-right: 0px; /* Remove margin from the last item */
+}
+
 
 
 
